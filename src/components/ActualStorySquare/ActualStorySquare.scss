@@ -1,0 +1,17 @@
+.story-square{
+    &__title{
+        position:relative;
+        top:45%;
+        left:20%;
+        z-index:-1;
+    }
+    &__image{
+        aspect-ratio:1 / 1;
+        max-width:15rem;
+        opacity:1;
+        transition: opacity 0.5s ease-in-out;
+        &:hover {
+            opacity:0;
+        }
+    }
+}
