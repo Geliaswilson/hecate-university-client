@@ -1,4 +1,4 @@
-import StorySquares from "../components/StorySquares/StorySquares";
+import StorySquares from "../../components/StorySquares/StorySquares";
 const Homepage = ({BASE_URL}) => {
     console.log(BASE_URL);
   return (
