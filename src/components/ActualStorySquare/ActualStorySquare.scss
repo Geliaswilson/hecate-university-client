@@ -1,4 +1,10 @@
 .story-square{
+    &__link{
+        text-decoration: none;
+        &:visited, a:link{
+            color:black;
+        }
+    }
     &__title{
         position:relative;
         top:45%;
