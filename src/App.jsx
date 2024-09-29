@@ -19,7 +19,7 @@ function App() {
         <Route path="/:storyId" element={<ActualStories BASE_URL={BASE_URL}/>} />
         <Route path="/events" element={<Events BASE_URL={BASE_URL} />} />
         <Route path="/organizations" element={<Organizations BASE_URL={BASE_URL}/>} />
-        <Route path="/concepts" element={<Concepts BASE_URL={BASE_URL} />} />
+        <Route path="/concepts//" element={<Concepts BASE_URL={BASE_URL} />} />
       </Routes>
       </BrowserRouter>
     </>
