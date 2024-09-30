@@ -1,4 +1,5 @@
 import ActualConcept from "../../components/ActualConcept/ActualConcept";
+import './Concepts.scss';
 import axios from "axios";
 import { useState, useEffect } from "react";
 const Concepts = ({BASE_URL}) => {
@@ -16,7 +17,8 @@ const Concepts = ({BASE_URL}) => {
     console.log(concepts)
     return(
         <>
-        <ul>
+        <h1>Concepts</h1>
+        <ul className="actual-concepts__list">
             {concepts.map((actualConcept, i) => (
         <ActualConcept key={i} actualConcept={actualConcept} />))}
         </ul>

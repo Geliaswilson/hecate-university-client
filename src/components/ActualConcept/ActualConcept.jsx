@@ -1,10 +1,10 @@
+import "./ActualConcept.scss"
 const ActualConcept = ({actualConcept}) => {
     return (
         <>
-        <li>
-        <h1>Concepts</h1>
+        <li id={actualConcept.id}>
         <h2>{actualConcept.concept}</h2>
-        <p>{actualConcept.text}</p>
+        <p className="actual-concept__text">{actualConcept.text}</p>
         </li>
         </>
     )
