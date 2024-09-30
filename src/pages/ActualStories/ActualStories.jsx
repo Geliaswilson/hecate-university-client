@@ -17,14 +17,24 @@ const ActualStories = ({BASE_URL}) => {
         console.log("Error: ", error);
       }
     };
-    
+    const [concepts, setConcepts] = useState([])
+    const fetchConcept = async () => {
+        const fetching = await axios.get(`${BASE_URL}concepts//`);
+        console.log(fetching);
+        const fetchedData = fetching.data;
+        console.log(fetchedData);
+        setConcepts(fetchedData);
+    }
+    useEffect(() => {
+        fetchConcept();
+    })
     useEffect(() => {
       fetchSpecificStories();
     }, [storyId]);
     console.log(stories)
     return (
         <>
-        <StoryContent story={stories}/>
+        <StoryContent story={stories} concepts={concepts}/>
         </>
     )
 }
