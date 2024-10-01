@@ -24,7 +24,7 @@ const StorySquares = ({BASE_URL}) => {
         <ul className="story-square__list">
             {stories.map((actualSquare, i) => (
         <ActualStorySquare key={i} actualSquare={actualSquare}/>
-    ))};
+    ))}
         </ul>
         
         </>

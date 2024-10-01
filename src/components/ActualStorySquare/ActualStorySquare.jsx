@@ -4,7 +4,7 @@ const ActualStorySquare = ({ actualSquare }) => {
   console.log(actualSquare.id);
   return (
     <>
-      <li>
+      <li className="story-square__list-item">
         <Link className="story-square__link" to={`/${actualSquare.id}`}>
         <h2 className="story-square__title">{actualSquare.name}</h2>
         <img className="story-square__image" src={actualSquare.coverImage} />
