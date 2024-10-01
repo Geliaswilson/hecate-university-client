@@ -1,12 +1,17 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
 .storysquares{
     &__subtitle{
         width:70%;
-        margin:0 auto;
+        margin:4rem auto;
         text-align:center;
+        color:$primaryred;
     }
     &__sub-subtitle{
         width:70%;
         margin:1rem auto;
         text-align:center;
+        color:$primaryred;
     }
 }

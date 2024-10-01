@@ -6,22 +6,22 @@ const Navbar = () => {
         <ul className="header__navbar">
             <li>
                 <Link to="/">
-                <p>Stories</p>
+                <p className="header__pages">Stories</p>
                 </Link>
             </li>
             <li>
             <Link to="/events">
-                <p>Events</p>
+                <p className="header__pages">Events</p>
                 </Link>
             </li>
             <li>
                 <Link to="/organizations">
-                <p>Organizations</p>
+                <p className="header__pages">Organizations</p>
                 </Link>
             </li>
             <li>
                 <Link to="/concepts//">
-                <p>Concepts</p>
+                <p className="header__pages">Concepts</p>
                 </Link>
             </li>
         </ul>

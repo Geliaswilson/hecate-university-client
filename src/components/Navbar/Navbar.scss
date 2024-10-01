@@ -1,15 +1,25 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
 .header {
   &__navbar {
     display: flex;
     flex-wrap:wrap;
-    max-width: 30%;
+    width: 30%;
     justify-content: space-evenly;
     list-style: none;
+    @include tablet{
+      max-width:30rem;
+      justify-content:space-evenly;
+    }
     & a,
     a:link,
     a:visited {
       text-decoration: none;
       color: black;
     }
+  }
+  &__pages{
+    color:$primaryred;
   }
 }
