@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import 'react-tooltip/dist/react-tooltip.css';
+import "./App.scss";
 import Homepage from "./pages/Homepage/Homepage";
 import ActualStories from './pages/ActualStories/ActualStories';
 import Events from './pages/Events/Events';
