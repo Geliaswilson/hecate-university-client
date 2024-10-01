@@ -1,3 +1,6 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
 .story-square{
     &__list-item{
         aspect-ratio:1 / 1;
@@ -14,6 +17,7 @@
         top:45%;
         z-index:-1;
         font-size:1.2rem;
+        color:$primaryred;
     }
     &__image{
         aspect-ratio:1 / 1;
