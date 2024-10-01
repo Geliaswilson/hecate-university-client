@@ -3,7 +3,7 @@ import "./Navbar.scss"
 const Navbar = () => {
     return (
         <>
-        <ul className="navbar">
+        <ul className="header__navbar">
             <li>
                 <Link to="/">
                 <p>Stories</p>

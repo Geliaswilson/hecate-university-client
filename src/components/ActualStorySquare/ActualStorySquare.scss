@@ -1,21 +1,19 @@
 .story-square{
     &__list-item{
-        /* aspect-ratio:1 / 1; */
-        /* max-height:10rem; */
+        aspect-ratio:1 / 1;
+        width:20rem;
     }
     &__link{
-        max-height:10rem;
         text-decoration: none;
-        display:block;
         &:visited, a:link{
             color:black;
         }
     }
     &__title{
-        width:fit-content;
         position:relative;
         top:45%;
         z-index:-1;
+        font-size:1.2rem;
     }
     &__image{
         aspect-ratio:1 / 1;

@@ -1,10 +1,15 @@
-.navbar{
-    display:flex;
-    max-width:40%;
-    justify-content:space-evenly;
-    list-style:none;
-    & a, a:link, a:visited{
-        text-decoration:none;
-        color:black;
+.header {
+  &__navbar {
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 30%;
+    justify-content: space-evenly;
+    list-style: none;
+    & a,
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: black;
     }
+  }
 }
