@@ -9,18 +9,20 @@ const ChapterParts = ({ actualPart, concepts }) => {
     navigate("/concepts//#1");
   };
   const olympusTooltipLink = (text) => {
-    const olympusLink = <a id="olympus">Olympus</a>;
+    const olympusLink = <a className="actual-part__olympus" id="olympus">Olympus</a>;
     return text
       .split("[olympuslink]")
       .map((part, index) => (index === 0 ? part : [olympusLink, part]));
   };
   return (
     <>
-      <h3 id={actualPart.id}>{actualPart.name}</h3>
+      <h3 className="actual-part__title" id={actualPart.id}>
+        {actualPart.name}
+      </h3>
       <p className="actual-part__text">{olympusTooltipLink(actualPart.text)}</p>
-      <Tooltip anchorSelect="#olympus" clickable>
+      <Tooltip className="actual-part__tooltip" anchorSelect="#olympus" clickable>
         <button onClick={handleToHeaven}>Heaven</button>
-        <p>{concepts[0].text}</p>
+        <p className="actual-part__tooltip-text">{concepts[0].text}</p>
       </Tooltip>
     </>
   );

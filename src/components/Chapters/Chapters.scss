@@ -7,14 +7,15 @@
     }
     &__anchor-list-item{
         list-style:none;
-        width:5rem;
+        height:0.2rem;
+        width:3rem;
         margin:0 auto;
         border-style:solid;
         border-color:$primaryred;
         border-bottom-left-radius:1rem;
         border-bottom-right-radius:1rem;
         padding:1rem;
-        padding-bottom:0.5rem;
+        padding-top:0.5rem;
         & a,
         a:link,
         a:visited {
@@ -25,5 +26,6 @@
     &__anchor-text{
         text-align:center;
         color:$primaryred;
+        font-size:0.8rem;
     }
 }
