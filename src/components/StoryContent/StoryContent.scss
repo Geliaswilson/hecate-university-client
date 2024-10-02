@@ -19,16 +19,8 @@ margin: 3rem auto;
         border-color:$secondaryblue;
         box-shadow: 10px 10px $primaryred;
     }
-    &__anchor-list{
+    &__anchor-list-item{
         list-style:none;
-        & a,
-        a:link,
-        a:visited {
-          text-decoration: none;
-          color: black;
-        }
-    }
-    &__anchor-list{
         width:3rem;
         margin:0 auto;
         border-style:solid;
@@ -37,8 +29,16 @@ margin: 3rem auto;
         border-bottom-left-radius:1rem;
         border-bottom-right-radius:1rem;
         padding:1rem;
+        padding-bottom:0.5rem;
+        & a,
+        a:link,
+        a:visited {
+          text-decoration: none;
+          color: black;
+        }
     }
     &__anchor-text{
-        color:$secondaryblue
+        color:$secondaryblue;
+        text-shadow:2px 2px 3px $secondaryred;
     }
 }
