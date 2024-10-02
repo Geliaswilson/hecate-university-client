@@ -17,7 +17,7 @@ const Concepts = ({BASE_URL}) => {
     console.log(concepts)
     return(
         <>
-        <h1>Concepts</h1>
+        <h1 className="concepts__title">Concepts</h1>
         <ul className="actual-concepts__list">
             {concepts.map((actualConcept, i) => (
         <ActualConcept key={i} actualConcept={actualConcept} />))}

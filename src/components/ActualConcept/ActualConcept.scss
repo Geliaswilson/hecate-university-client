@@ -1,8 +1,16 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
 .actual-concept {
   &__list-items {
     list-style: none;
   }
+  &__title{
+    color:$primaryred;
+    text-align:center;
+  }
   &__text {
     text-wrap: wrap;
+    color:$primaryred;
   }
 }
