@@ -10,7 +10,9 @@ const Chapters = ({ actualChapter, concepts }) => {
   return (
     <>
       <li className="chapter-parts__list-items">
+        <p className="chapter-parts__title-decor chapter-parts__title-decor-top">┍━━━━━━━☾━━━━━━━┑</p>
         <h2 className="chapter-parts__title" id={actualChapter.id}>{actualChapter.name}</h2>
+        <p className="chapter-parts__title-decor chapter-parts__title-decor-bottom">┕━━━━━━━☽━━━━━━━┙</p>
         <ul className="navbar">
             <li className="chapter-parts__anchor-list-item">
                 <AnchorLink className="chapter-parts__anchor" href="#941ee4e9-4e7b-4c67-8c81-e969db3163c5">

@@ -4,6 +4,20 @@
 .chapter-parts{
     &__title{
         color:$primaryred;
+        text-align:center;
+        
+    }
+    &__title-decor{
+        text-align:center;
+        color:$primaryblue;
+    }
+    &__title-decor-top{
+        margin-top:2rem;
+        margin-bottom:1rem;
+    }
+    &__title-decor-bottom{
+        margin-bottom:2rem;
+        margin-top:1rem;
     }
     &__anchor-list-item{
         list-style:none;
