@@ -1,6 +1,5 @@
 import "./StoryContent.scss";
 import Chapters from "../Chapters/Chapters";
-import { Link } from "react-router-dom";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 const StoryContent = ({story, concepts}) => {
     console.log({story});
@@ -9,12 +8,12 @@ const StoryContent = ({story, concepts}) => {
     console.log(chapters);
     return(
         <>
-        <h1>{story.name}</h1>
-        <p>{story.hook}</p>
+        <h1 className="actual-stories__title">{story.name}</h1>
+        <p className="actual-stories__hook">{story.hook}</p>
         <ul className="navbar">
-            <li>
-                <AnchorLink href="#7c08defc-da13-4b76-81f3-4369c955ec61">
-                <p>Replay</p>
+            <li className="actual-stories__anchor-list-item">
+                <AnchorLink className="actual-stories__anchor" href="#7c08defc-da13-4b76-81f3-4369c955ec61">
+                <p className="actual-stories__anchor-text">Replay</p>
                 </AnchorLink>
             </li>
         </ul>
