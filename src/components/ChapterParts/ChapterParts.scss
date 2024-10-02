@@ -11,13 +11,16 @@
     color: $primaryred;
   }
   &__olympus {
+    &:hover{
+      cursor:pointer;
+    }
     color: $primaryblue;
     color:transparent;
     background: linear-gradient(90deg, $tertiaryblue, $primaryblue, $tertiaryblue);
     background-repeat: no-repeat;
     overflow:hidden;
     background-size:200% 200%;
-    animation: glow 3s linear infinite;
+    animation: glow 1s linear infinite;
     background-clip:text;
   }
   @keyframes glow {
@@ -31,10 +34,27 @@
       background-position: 0% 50%;
     }
   }
-  &__tooltip{
-    background-color: $secondaryblue;
-  }
   &__tooltip-text{
     color:$primaryblue;
   }
+  &__tooltip-button{
+    &:hover{
+      cursor:pointer;
+    }
+    font-weight:bold;
+    color:$primaryblue;
+    background-color:$secondaryblue;
+    border-style:none;
+    color:transparent;
+    background: linear-gradient(90deg, $tertiaryred, $primaryblue, $tertiaryred);
+    background-repeat: no-repeat;
+    overflow:hidden;
+    background-size:200% 200%;
+    animation: glow 1s linear infinite;
+    background-clip:text;
+  }
 }
+.actual-part__tooltip-div .actual-part__tooltip{
+  background-color:$secondaryblue;
+  box-shadow:3px 3px 7px $primaryblue;
+    }

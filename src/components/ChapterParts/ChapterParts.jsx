@@ -20,10 +20,12 @@ const ChapterParts = ({ actualPart, concepts }) => {
         {actualPart.name}
       </h3>
       <p className="actual-part__text">{olympusTooltipLink(actualPart.text)}</p>
+      <div className="actual-part__tooltip-div">
       <Tooltip className="actual-part__tooltip" anchorSelect="#olympus" clickable>
-        <button onClick={handleToHeaven}>Heaven</button>
+        <button className="actual-part__tooltip-button" onClick={handleToHeaven}>Heaven</button>
         <p className="actual-part__tooltip-text">{concepts[0].text}</p>
       </Tooltip>
+      </div>
     </>
   );
 };
