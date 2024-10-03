@@ -40,6 +40,19 @@
       background-position: 0% 50%;
     }
   }
+  &__university{
+    &:hover{
+      cursor:pointer;
+    }
+    color: $primaryblue;
+    color:transparent;
+    background: linear-gradient(90deg, $tertiaryblue, $primaryblue, $tertiaryblue);
+    background-repeat: no-repeat;
+    overflow:hidden;
+    background-size:200% 200%;
+    animation: glow 1s linear infinite;
+    background-clip:text;
+  }
   &__tooltip-text{
     color:$primaryblue;
   }
