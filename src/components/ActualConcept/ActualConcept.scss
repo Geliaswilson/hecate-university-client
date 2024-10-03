@@ -7,10 +7,15 @@
   }
   &__title{
     color:$primaryred;
-    text-align:center;
+    margin-left:100px;
   }
   &__text {
     text-wrap: wrap;
     color:$primaryred;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:50px;
+    color: $primaryred;
+    line-height:2rem;
   }
 }
