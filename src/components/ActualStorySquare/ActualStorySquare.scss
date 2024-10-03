@@ -1,4 +1,11 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
 .story-square{
+    &__list-item{
+        aspect-ratio:1 / 1;
+        width:20rem;
+    }
     &__link{
         text-decoration: none;
         &:visited, a:link{
@@ -8,12 +15,13 @@
     &__title{
         position:relative;
         top:45%;
-        left:20%;
         z-index:-1;
+        font-size:1.2rem;
+        color:$primaryred;
     }
     &__image{
         aspect-ratio:1 / 1;
-        max-width:15rem;
+        max-width:100%;
         opacity:1;
         transition: opacity 0.5s ease-in-out;
         &:hover {

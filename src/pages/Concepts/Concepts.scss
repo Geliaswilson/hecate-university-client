@@ -1,3 +1,14 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
+.concepts{
+    &__title{
+        color:$primaryred;
+width:30%;
+margin: 3rem auto;
+text-align:center;
+    }
+}
 .actual-concepts{
     &__list{
         list-style:none;

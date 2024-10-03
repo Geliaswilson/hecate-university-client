@@ -1,0 +1,20 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__title {
+    width: 38%;
+    color: $primaryred;
+    display: flex;
+    justify-content: center;
+    @include tablet{
+        width:43%;
+    }
+    @include desktop{
+        width:40%;
+    }
+  }
+}

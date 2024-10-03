@@ -1,0 +1,44 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
+.actual-stories{
+    &__title{
+color:$primaryred;
+text-align:center;
+margin: 3rem auto;
+    }
+    &__hook{
+        color:$primaryred;
+        width:50%;
+        margin:0 auto;
+        margin-bottom:2rem;
+        padding:1rem;
+        text-align:center;
+        border-style:solid;
+        border-radius:2rem;
+        border-color:$secondaryblue;
+        box-shadow: 10px 10px $primaryred;
+    }
+    &__anchor-list-item{
+        list-style:none;
+        width:3rem;
+        margin:0 auto;
+        border-style:solid;
+        border-color:$primaryred;
+        background-color:$primaryred;
+        border-bottom-left-radius:1rem;
+        border-bottom-right-radius:1rem;
+        padding:1rem;
+        padding-bottom:0.5rem;
+        & a,
+        a:link,
+        a:visited {
+          text-decoration: none;
+          color: black;
+        }
+    }
+    &__anchor-text{
+        color:$secondaryblue;
+        text-shadow:2px 2px 3px $secondaryred;
+    }
+}

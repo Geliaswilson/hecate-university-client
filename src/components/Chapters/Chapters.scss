@@ -1,0 +1,45 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
+.chapter-parts{
+    &__title{
+        color:$primaryred;
+        text-align:center;
+        
+    }
+    &__title-decor{
+        text-align:center;
+        color:$primaryblue;
+    }
+    &__title-decor-top{
+        margin-top:2rem;
+        margin-bottom:1rem;
+    }
+    &__title-decor-bottom{
+        margin-bottom:2rem;
+        margin-top:1rem;
+    }
+    &__anchor-list-item{
+        list-style:none;
+        height:0.2rem;
+        width:3rem;
+        margin:0 auto;
+        border-style:solid;
+        border-color:$primaryred;
+        border-bottom-left-radius:1rem;
+        border-bottom-right-radius:1rem;
+        padding:1rem;
+        padding-top:0.5rem;
+        & a,
+        a:link,
+        a:visited {
+          text-decoration: none;
+          color: black;
+        }
+    }
+    &__anchor-text{
+        text-align:center;
+        color:$primaryred;
+        font-size:0.8rem;
+    }
+}

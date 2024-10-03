@@ -1,6 +1,79 @@
-.actual-part{
-    &__text{
-        white-space:pre;
-        text-wrap:wrap;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/breakpoints" as *;
+.actual-part {
+  &__title {
+    color: $primaryred;
+    margin-left:100px;
+    margin-top:50px;
+    margin-bottom:25px;
+  }
+  &__text {
+    white-space: pre;
+    text-wrap: wrap;
+    margin-left:100px;
+    margin-right:100px;
+    color: $primaryred;
+    line-height:2rem;
+  }
+  &__olympus {
+    &:hover{
+      cursor:pointer;
     }
+    color: $primaryblue;
+    color:transparent;
+    background: linear-gradient(90deg, $tertiaryblue, $primaryblue, $tertiaryblue);
+    background-repeat: no-repeat;
+    overflow:hidden;
+    background-size:200% 200%;
+    animation: glow 1s linear infinite;
+    background-clip:text;
+  }
+  @keyframes glow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  &__university{
+    &:hover{
+      cursor:pointer;
+    }
+    color: $primaryblue;
+    color:transparent;
+    background: linear-gradient(90deg, $tertiaryblue, $primaryblue, $tertiaryblue);
+    background-repeat: no-repeat;
+    overflow:hidden;
+    background-size:200% 200%;
+    animation: glow 1s linear infinite;
+    background-clip:text;
+  }
+  &__tooltip-text{
+    color:$primaryblue;
+  }
+  &__tooltip-button{
+    &:hover{
+      cursor:pointer;
+    }
+    font-weight:bold;
+    color:$primaryblue;
+    background-color:$secondaryblue;
+    border-style:none;
+    color:transparent;
+    background: linear-gradient(90deg, $tertiaryred, $primaryblue, $tertiaryred);
+    background-repeat: no-repeat;
+    overflow:hidden;
+    background-size:200% 200%;
+    animation: glow 1s linear infinite;
+    background-clip:text;
+  }
 }
+.actual-part__tooltip-div .actual-part__tooltip{
+  background-color:$secondaryblue;
+  box-shadow:3px 3px 7px $primaryblue;
+    }
