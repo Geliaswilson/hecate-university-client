@@ -2,8 +2,6 @@ import "./ChapterParts.scss";
 import { Tooltip } from "react-tooltip";
 import { useNavigate } from "react-router-dom";
 const ChapterParts = ({ actualPart, concepts }) => {
-  console.log(actualPart);
-  console.log(concepts);
   const navigate = useNavigate();
   const handleToHeaven = () => {
     navigate("/concepts//#1");
@@ -23,26 +21,26 @@ const ChapterParts = ({ actualPart, concepts }) => {
             part,
           ]
     );
-    console.log(olympusTooltip);
     return olympusTooltip.map((part, index) => {
       if (typeof part === "string") {
-    return part.split("[universitylink]").map((subPart, subIndex) =>
-      subIndex === 0
-        ? subPart
-        : [
-            <a
-              key={`university-${index}-${subIndex}`}
-              className="actual-part__university"
-              id="university"
-            >
-              University
-            </a>,
-            subPart,
-          ]
-    );
+        return part.split("[universitylink]").map((subPart, subIndex) =>
+          subIndex === 0
+            ? subPart
+            : [
+                <a
+                  key={`university-${index}-${subIndex}`}
+                  className="actual-part__university"
+                  id="university"
+                >
+                  University
+                </a>,
+                subPart,
+              ]
+        );
+      }
+      return part;
+    });
   };
-  return part;
-})};
   return (
     <>
       <h3 className="actual-part__title" id={actualPart.id}>

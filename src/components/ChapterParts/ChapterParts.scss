@@ -22,7 +22,7 @@
     }
     color: $primaryblue;
     color:transparent;
-    background: linear-gradient(90deg, $tertiaryblue, $primaryblue, $tertiaryblue);
+    background: linear-gradient(90deg, $tertiaryblue, $quaternaryblue, $tertiaryblue);
     background-repeat: no-repeat;
     overflow:hidden;
     background-size:200% 200%;
@@ -54,7 +54,7 @@
     background-clip:text;
   }
   &__tooltip-text{
-    color:$primaryblue;
+    color:$quaternaryblue;
   }
   &__tooltip-button{
     &:hover{
@@ -65,7 +65,7 @@
     background-color:$secondaryblue;
     border-style:none;
     color:transparent;
-    background: linear-gradient(90deg, $tertiaryred, $primaryblue, $tertiaryred);
+    background: linear-gradient(90deg, $tertiaryred, $quaternaryblue, $tertiaryred);
     background-repeat: no-repeat;
     overflow:hidden;
     background-size:200% 200%;
