@@ -1,8 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Hecate University
+## A model for the intersection between flexible navigation, broad accessibility, and exciting, tantalizing fantasy fiction.
+Powered by React and Node, Hecate University seeks to enable the fantasy fiction reader an attention-grabbing and exploratorily exciting experience.
+It focuses on accessibility concerns with its considerations of font and spacing to retain a reader's eyes even through large sections of text.
+There is also a complex, bt visually comprehensive network of navigation both within individual pages as well as across pages, so that a reader may find lore related to the story they enjoy as quickly as their curiosity strikes!
