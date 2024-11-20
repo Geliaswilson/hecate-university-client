@@ -3,11 +3,17 @@
 @use "../../styles/partials/breakpoints" as *;
 .header {
   &__navbar {
+    margin:1rem;
+    height:3.5rem;
+    max-width:90%;
     display: flex;
-    flex-wrap:wrap;
-    width: 30%;
-    justify-content: space-evenly;
+    align-items:center;
+    justify-content:space-evenly;
     list-style: none;
+    background-color: $primaryred;
+    border-style:solid;
+    border-width:0.3rem;
+    border-color:$tertiaryred;
     @include tablet{
       max-width:30rem;
       justify-content:space-evenly;
@@ -20,6 +26,38 @@
     }
   }
   &__pages{
-    color:$primaryred;
+    color:$secondaryred;
+    font-size:13px;
+    font-weight:bold;
+    transition: all 1s ease-in-out 0;
+    &:hover{
+      background-color:$secondaryblue;
+      border-radius:0.5rem;
+      width:fit-content;
+      height:1rem;
+      color:$primaryred;
+      padding:0.3rem;
+    }
+    &:focus{
+      background-color:$secondaryblue;
+      border-radius:0.5rem;
+      width:fit-content;
+      height:1rem;
+      color:$primaryred;
+      padding:0.3rem;
+    }
   }
+  /* .active-nav-button{
+    background-color:$secondaryblue;
+    border-radius:0.5rem;
+    width:fit-content;
+    height:1rem;
+    color:$primaryred;
+    padding:0.3rem;
+  }
+  .inactive-nav-button{
+    color:$secondaryred;
+    font-size:13px;
+    font-weight:bold;
+  } */
 }

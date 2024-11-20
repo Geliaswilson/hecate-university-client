@@ -5,7 +5,6 @@ const Header = () => {
         <>
         <header className="header">
         <Navbar />
-        <h2 className="header__title">The University</h2>
         </header>
         </>
     )
